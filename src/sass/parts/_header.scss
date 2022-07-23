@@ -1,0 +1,46 @@
+@mixin m1 ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+.container-xl {
+    .header {
+        z-index: 2;
+        position: sticky;
+        top: 0;
+        background-color: var(--black);
+        height: 100px;
+        .container-fluid {
+            border-bottom: 2px solid white;
+            padding: 0;
+            height: 118%;
+            a {
+                font-family: serif;
+                font-weight: 600;
+            }
+            .collapse {
+                position: relative;
+                ul {
+                    width: 70%;
+                    position: absolute;
+                    right: 0;
+                    justify-content: space-between;
+                    li {
+                        a {
+                            font-family: sans-serif;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: var(--white);
+                            transition: all 0.2s linear;
+                            &:hover{
+                                color: var(--warning);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

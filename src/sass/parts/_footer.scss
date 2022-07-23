@@ -1,0 +1,15 @@
+@mixin m1 ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.footer{
+    background-color: var(--warning);
+    height: 40px;
+    p{
+        a{
+            color: var(--black);
+        }
+    }
+}
